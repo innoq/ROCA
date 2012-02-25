@@ -1,3 +1,6 @@
+---
+title: ROCA: Resource-oriented Client Architecture
+---
 ROCA
 ====
 
