@@ -1,5 +1,6 @@
 ---
 title: ROCA: Resource-oriented Client Architecture
+layout: default
 ---
 ROCA
 ====
