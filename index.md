@@ -45,7 +45,7 @@ style if it meets all of the following mandatory requirements:
    independent of layout information; CSS is used for
    formatting
 3. In line with the principles
-   of [progressive enhancement] [], JavaScript is
+   of [progressive enhancement][], JavaScript is
    used [unobtrusively][unobtrusive javascript]
    and the application is still usable (albeit with a
    decrease in usability and convenience) if JavaScript is
