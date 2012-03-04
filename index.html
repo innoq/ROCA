@@ -86,16 +86,43 @@ title: "ROCA: Resource-oriented Client Architecture"
 					simple algorithmic validation of authentication
 					information
 				</li>
-				<li>Back button, bookmarking, linking to specific
-					information doesn&#8217;t work as expected by the
-					user
+				<li>The back and forward buttons don't
+					work as expected, i.e. they
+					don't take the user where they
+					expect to be taken to (the
+					last meaningful resource they
+					worked with)
 				</li>
-				<li>A browser refresh causes unexpected behavior (e.g. a
-					re-rendering of the login or home page)
+				<li>A user can't link to a specific
+					piece of information, e.g. by
+					copying the address from the
+					browser's address bar and
+					pasting it into an email, by
+					creating a bookmark, or using
+					any of the fancier ways to
+					share URIs
+				</li>
+				<li>A browser refresh causes
+					unexpected behavior, e.g. a
+					re-rendering of the login or
+					home page instead of the page
+					the user is looking at, or a
+					(to the user) unexpected
+					question about wanting to
+					submit the same data again
+					(when the user doesn't recall
+					submitting any data,
+					indicating a mis-use of the
+					POST verb)
 				</li>
 				<li>The content sent to the client mainly consists of
 					JavaScript that retrieves the real content from the
-					server
+					server, requiring JavaScript
+					to be enabled to make any
+					sense of the application
+				</li>
+				<li>Tools for accessibility,
+					e.g. screen readers, can't be used 
 				</li>
 			</ol>
 		</div>

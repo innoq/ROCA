@@ -26,9 +26,10 @@ aspects described above.
 If you really need a framework, we recommend you
 try [here](http://www.dafk.net/what/).
 
-### What are good frameworks that are a good choice for the ROCA style?
-We plan to include a section on this, but would like to test
-the community's reaction first.
+### What are good frameworks that are a good choice for the ROCA
+style?  We plan to include a section on this, but would like to test
+the community's reaction first. Frankly, we don't want to risk ROCA
+being associated with any particular framework or even community.
 
 ### But what about single-page apps? Aren't they the future?
 We don't think so; in our view, single page apps repeat the
@@ -41,7 +42,9 @@ a bug, it's a feature.
 The ROCA style itself is nothing new and can be seen in the
 wild in any number of Web applications. The name and this
 document have been created by Till Schulte-Coerne, Stefan
-Tilkov, Phillip Ghadir and Josh Graham.
+Tilkov, Phillip Ghadir and Josh Graham, with lots of valuable input
+from a number of other folks, most notably from internal discussions
+at innoQ as well as a presentation on ROCA at SpeakerConf 2012.
 
 ### How can I use this document?
 This document is licensed under a Creative Commons license,
