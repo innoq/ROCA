@@ -7,12 +7,14 @@ Q&A
 ---
 
 ### Why ROCA?
+
 In our work, we found that it's far easier to get ideas
 across if they can be referred to by name, compared against
 other approaches, and thus be made tangible. ROCA is an attempt
 to provide a reference for exactly this purpose.
 
 ### Why "ROCA"?
+
 It was the most reasonable and easy-to-remember name we could
 come up with that also resolved to a meaningful acronym.
 
@@ -32,13 +34,23 @@ the community's reaction first. Frankly, we don't want to risk ROCA
 being associated with any particular framework or even community.
 
 ### But what about single-page apps? Aren't they the future?
+
 We don't think so; in our view, single page apps repeat the
 mistakes of unnecessarily fat server-side Web frameworks on
 the client side. The fact that the Web relies on a series of
 resource representations that are linked to each other is not
 a bug, it's a feature.
+
+### So you're against dynamic pages, Ajax and stuff?
+
+Of course not. Using JavaScript to create a better user experience is
+an entirely awesome idea. That doesn't mean you have to degrade the
+browser into a runtime for a custom UI engine. It's perfectly possible
+to use JavaScript unobtrusively, which will in our view give you the
+best of both worlds.
   
 ### Who's behind ROCA?
+
 The ROCA style itself is nothing new and can be seen in the
 wild in any number of Web applications. The name and this
 document have been created by Till Schulte-Coerne, Stefan
@@ -47,6 +59,7 @@ from a number of other folks, most notably from internal discussions
 at innoQ as well as a presentation on ROCA at SpeakerConf 2012.
 
 ### How can I use this document?
+
 This document is licensed under a Creative Commons license,
 i.e. you can essentially use it as you see fit, as long as you
 include proper attribution and share your modifications under
@@ -55,6 +68,7 @@ compare or develop frameworks according to this style, and
 intend to be as open as reasonably possible while maintaining
 conceptual integrity.
 
-### Can I provide feedback?
-Of course, please use the comments to share your thoughts. We
+### Can I provide feedback?  
+
+Of course, please use <a href='./discussion.html'>the comments</a> to share your thoughts. We
 welcome criticism as well as suggestions for improvement.
