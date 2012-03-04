@@ -1,3 +1,7 @@
+---
+layout: default
+title: "ROCA: Resource-oriented Client Architecture - Discussion"
+---
 <div id="disqus_thread"></div>
 
 <script charset="utf-8" src="http://cachedcommons.org/cache/jquery/1.4.2/javascripts/jquery.js" type="text/javascript"></script>
