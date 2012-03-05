@@ -2,141 +2,117 @@
 layout: default
 title: "ROCA: Resource-oriented Client Architecture"
 ---
-	<h1>ROCA: Resource-oriented Client Architecture</h1>
-	<p><em>A collection of simple best practices for decent Web
-	application frontends</em></p>
+<h2>Introduction</h2>
+<p>Web application architecture is heavily influenced by the
+	design decisions, both implicit and explicit, that have been
+	made by framework developers. Sometimes these decisions are
+	consciously accepted as being in line with the intended overall
+	system architecture. More often, though, they are accepted
+	simply because developers assume they embody the state of the
+	art of development practices. However, we find that very often
+	frameworks are driven more by their authors&#8217; personal
+	taste, the intent to create something new, a desire to hide the
+	Web and turn it into something different, or any combination of
+	these factors.
+</p>
+<p>ROCA is an attempt to define a set of recommendations -
+	independent of any particular framework, programming language,
+	or tooling - that embodies the principles of what we consider to
+	be good web application architecture. Its purpose is to serve as
+	a reference, one that can be implemented as is or be compared to
+	other approaches to highlight diverging design decisions.
+</p>
 
-	<h2>Introduction</h2>
-	<p>Web application architecture is heavily influenced by the
-		design decisions, both implicit and explicit, that have been
-		made by framework developers. Sometimes these decisions are
-		consciously accepted as being in line with the intended overall
-		system architecture. More often, though, they are accepted
-		simply because developers assume they embody the state of the
-		art of development practices. However, we find that very often
-		frameworks are driven more by their authors&#8217; personal
-		taste, the intent to create something new, a desire to hide the
-		Web and turn it into something different, or any combination of
-		these factors.
-	</p>
-	<p>ROCA is an attempt to define a set of recommendations -
-		independent of any particular framework, programming language,
-		or tooling - that embodies the principles of what we consider to
-		be good web application architecture. Its purpose is to serve as
-		a reference, one that can be implemented as is or be compared to
-		other approaches to highlight diverging design decisions.
-	</p>
+<h2>MUSTs</h2>
+<p>A web application's architecture is compliant to the ROCA
+	style if it meets all of the following mandatory requirements:
+</p>
+<ol>
+	<li><a name='must-rest'></a>The server application adheres to REST principles,
+		i.e. the server exposes a set of resources with their own URIs
+		that are meaningful to a user sitting in front of a browser, all
+		of the information necessary for handling a request is contained
+		in the request itself and the resource state maintained by the
+		server (stateless
+		communication). [<a href='#must-rest'>must-rest</a>]
+	</li>
+	<li><a name='must-server'></a>The core application
+		logic is contained on the server, and invoked by
+		interacting with it through
+		RESTful HTTP requests. [<a href='#must-server'>must-server</a>]
+	</li>
+	<li><a name='must-html'></a>The server returns structured HTML markup that is
+		independent of layout information; CSS is used for
+		formatting. [<a href='#must-html'>must-html</a>]
+	</li>
+	<li><a name='must-jslimits'></a>In line with the principles
+		of <a href="http://en.wikipedia.org/wiki/Progressive_enhancement" 
+		title="Progressive enhancement">progressive enhancement</a>, JavaScript is
+		used <a href="http://en.wikipedia.org/wiki/Unobtrusive_JavaScript" 
+		title="Unobtrusive JavaScript">unobtrusively</a>
+		and the application is still usable (albeit with a
+		decrease in usability and convenience) if JavaScript is
+		disabled. [<a href='#must-jslimits'>must-jslimits</a>]
+	</li>
+</ol>
 
-	<div class='row-fluid'>
-		<div class='span4'>
-			<h2>MUSTs</h2>
-			<p>A web application's architecture is compliant to the ROCA
-				style if it meets all of the following mandatory requirements:
-			</p>
-			<ol>
-				<li><a name='must-rest'></a>The server application adheres to REST principles,
-					i.e. the server exposes a set of resources with their own URIs
-					that are meaningful to a user sitting in front of a browser, all
-					of the information necessary for handling a request is contained
-					in the request itself and the resource state maintained by the
-					server (stateless
-					communication). [<a href='#must-rest'>must-rest</a>]
-				</li>
-				<li><a name='must-server'></a>The core application
-					logic is contained on the server, and invoked by
-					interacting with it through
-					RESTful HTTP requests. [<a href='#must-server'>must-server</a>]
-				</li>
-				<li><a name='must-html'></a>The server returns structured HTML markup that is
-					independent of layout information; CSS is used for
-					formatting. [<a href='#must-html'>must-html</a>]
-				</li>
-				<li><a name='must-jslimits'></a>In line with the principles
-					of <a href="http://en.wikipedia.org/wiki/Progressive_enhancement" 
-					title="Progressive enhancement">progressive enhancement</a>, JavaScript is
-					used <a href="http://en.wikipedia.org/wiki/Unobtrusive_JavaScript" 
-					title="Unobtrusive JavaScript">unobtrusively</a>
-					and the application is still usable (albeit with a
-					decrease in usability and convenience) if JavaScript is
-					disabled. [<a href='#must-jslimits'>must-jslimits</a>]
-				</li>
-			</ol>
-		</div>
+<h2>MUST NOTs</h2>
+<p>The following characteristics are clear indications that the ROCA style is violated:</p>
+<ol>
+	<li><a name='shouldnot-cookies'></a>Cookies
+	are used for purposes other than
+	authentication. [<a href='#shouldnot-cookies'>shouldnot-cookies</a>]
+	</li>
+	<li><a name='shouldnot-session'></a>There
+		is session state beyond
+		what&#8217;s needed for simple
+		algorithmic validation of
+		authentication
+		information. [<a href='#shouldnot-session'>shouldnot-session</a>]
+	</li>
+	<li><a name='shouldnot-break-back'></a>The back and forward buttons don't
+		work as expected, i.e. they
+		don't take the user where they
+		expect to be taken to (the
+		last meaningful resource they
+		worked with). [<a href='#shouldnot-break-back'>shouldnot-break-back</a>]
+	</li>
+	<li><a name='shouldnot-break-link'></a>A user can't link to a specific
+		piece of information, e.g. by
+		copying the address from the
+		browser's address bar and
+		pasting it into an email, by
+		creating a bookmark, or using
+		any of the fancier ways to
+		share URIs. [<a href='#shouldnot-break-link'>shouldnot-break-link</a>]
+	</li>
+	<li><a name='shouldnot-break-refresh'></a>A browser refresh causes
+		unexpected behavior, e.g. a
+		re-rendering of the login or
+		home page instead of the page
+		the user is looking at, or a
+		(to the user) unexpected
+		question about wanting to
+		submit the same data again
+		(when the user doesn't recall
+		submitting any data,
+		indicating a mis-use of the
+		POST verb). [<a href='#shouldnot-break-refresh'>shouldnot-break-refresh</a>]
+	</li>
+	<li><a name='shouldnot-jsengine'></a>The content sent to the client mainly consists of
+		JavaScript that retrieves the real content from the
+		server, requiring JavaScript
+		to be enabled to make any
+		sense of the application. [<a href='#shouldnot-jsengine'>shouldnot-jsengine</a>]
+	</li>
+	<li><a name='shouldnot-break-accessibility'></a>Tools for accessibility,
+		e.g. screen readers, can't be used. [<a href='#shouldnot-break-accessibility'>shouldnot-break-accessibilit</a>] 
+	</li>
+</ol>
 
-		<div class='span4'>
-			<h2>SHOULDs</h2>
-			<p>The following concepts are encouraged, but not mandatory:</p>
-			<ol>
-				<li><a name='should-formats'></a>Resources have additional representations in other formats, e.g.
-					JSON and/or XML. [<a href='#should-formats'>should-formats</a>]
-				</li>
-				<li><a name='should-auth'></a>All authenticated communication relies on HTTP Basic
-					Authentication over SSL (or Client
-					Certificates). Alternatively, cookies can be used if
-					they include all of the state needed for the server to
-					process them. [<a href='#should-auth'>should-auth</a>]
-				</li>
-			</ol>
-		</div>
+<hr>
 
-		<div class='span4'>
-			<h2>MUST NOTs</h2>
-			<p>The following characteristics are clear indications that the ROCA style is violated:</p>
-			<ol>
-				<li><a name='shouldnot-cookies'></a>Cookies
-				are used for purposes other than
-				authentication. [<a href='#shouldnot-cookies'>shouldnot-cookies</a>]
-				</li>
-				<li><a name='shouldnot-session'></a>There
-					is session state beyond
-					what&#8217;s needed for simple
-					algorithmic validation of
-					authentication
-					information. [<a href='#shouldnot-session'>shouldnot-session</a>]
-				</li>
-				<li><a name='shouldnot-break-back'></a>The back and forward buttons don't
-					work as expected, i.e. they
-					don't take the user where they
-					expect to be taken to (the
-					last meaningful resource they
-					worked with). [<a href='#shouldnot-break-back'>shouldnot-break-back</a>]
-				</li>
-				<li><a name='shouldnot-break-link'></a>A user can't link to a specific
-					piece of information, e.g. by
-					copying the address from the
-					browser's address bar and
-					pasting it into an email, by
-					creating a bookmark, or using
-					any of the fancier ways to
-					share URIs. [<a href='#shouldnot-break-link'>shouldnot-break-link</a>]
-				</li>
-				<li><a name='shouldnot-break-refresh'></a>A browser refresh causes
-					unexpected behavior, e.g. a
-					re-rendering of the login or
-					home page instead of the page
-					the user is looking at, or a
-					(to the user) unexpected
-					question about wanting to
-					submit the same data again
-					(when the user doesn't recall
-					submitting any data,
-					indicating a mis-use of the
-					POST verb). [<a href='#shouldnot-break-refresh'>shouldnot-break-refresh</a>]
-				</li>
-				<li><a name='shouldnot-jsengine'></a>The content sent to the client mainly consists of
-					JavaScript that retrieves the real content from the
-					server, requiring JavaScript
-					to be enabled to make any
-					sense of the application. [<a href='#shouldnot-jsengine'>shouldnot-jsengine</a>]
-				</li>
-				<li><a name='shouldnot-break-accessibility'></a>Tools for accessibility,
-					e.g. screen readers, can't be used. [<a href='#shouldnot-break-accessibility'>shouldnot-break-accessibilit</a>] 
-				</li>
-			</ol>
-		</div>
-	</div>
-
-    <h3>License</h3>
+<h3 class="license">License</h3>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">ROCA</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 
