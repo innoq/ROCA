@@ -83,34 +83,34 @@ title: "ROCA: Resource-oriented Client Architecture"
 			<h2>MUST NOTs</h2>
 			<p>The following characteristics are clear indications that the ROCA style is violated:</p>
 			<ol>
-				<li><a name='shouldnot-cookies'></a>Cookies
+				<li><a name='mustnot-cookies'></a>Cookies
 				are used for purposes other than
-				authentication. [<a href='#shouldnot-cookies'>shouldnot-cookies</a>]
+				authentication. [<a href='#mustnot-cookies'>mustnot-cookies</a>]
 				</li>
-				<li><a name='shouldnot-session'></a>There
+				<li><a name='mustnot-session'></a>There
 					is session state beyond
 					what&#8217;s needed for simple
 					algorithmic validation of
 					authentication
-					information. [<a href='#shouldnot-session'>shouldnot-session</a>]
+					information. [<a href='#mustnot-session'>mustnot-session</a>]
 				</li>
-				<li><a name='shouldnot-break-back'></a>The back and forward buttons don't
+				<li><a name='mustnot-break-back'></a>The back and forward buttons don't
 					work as expected, i.e. they
 					don't take the user where they
 					expect to be taken to (the
 					last meaningful resource they
-					worked with). [<a href='#shouldnot-break-back'>shouldnot-break-back</a>]
+					worked with). [<a href='#mustnot-break-back'>mustnot-break-back</a>]
 				</li>
-				<li><a name='shouldnot-break-link'></a>A user can't link to a specific
+				<li><a name='mustnot-break-link'></a>A user can't link to a specific
 					piece of information, e.g. by
 					copying the address from the
 					browser's address bar and
 					pasting it into an email, by
 					creating a bookmark, or using
 					any of the fancier ways to
-					share URIs. [<a href='#shouldnot-break-link'>shouldnot-break-link</a>]
+					share URIs. [<a href='#mustnot-break-link'>mustnot-break-link</a>]
 				</li>
-				<li><a name='shouldnot-break-refresh'></a>A browser refresh causes
+				<li><a name='mustnot-break-refresh'></a>A browser refresh causes
 					unexpected behavior, e.g. a
 					re-rendering of the login or
 					home page instead of the page
@@ -121,16 +121,16 @@ title: "ROCA: Resource-oriented Client Architecture"
 					(when the user doesn't recall
 					submitting any data,
 					indicating a mis-use of the
-					POST verb). [<a href='#shouldnot-break-refresh'>shouldnot-break-refresh</a>]
+					POST verb). [<a href='#mustnot-break-refresh'>mustnot-break-refresh</a>]
 				</li>
-				<li><a name='shouldnot-jsengine'></a>The content sent to the client mainly consists of
+				<li><a name='mustnot-jsengine'></a>The content sent to the client mainly consists of
 					JavaScript that retrieves the real content from the
 					server, requiring JavaScript
 					to be enabled to make any
-					sense of the application. [<a href='#shouldnot-jsengine'>shouldnot-jsengine</a>]
+					sense of the application. [<a href='#mustnot-jsengine'>mustnot-jsengine</a>]
 				</li>
-				<li><a name='shouldnot-break-accessibility'></a>Tools for accessibility,
-					e.g. screen readers, can't be used. [<a href='#shouldnot-break-accessibility'>shouldnot-break-accessibilit</a>] 
+				<li><a name='mustnot-break-accessibility'></a>Tools for accessibility,
+					e.g. screen readers, can't be used. [<a href='#mustnot-break-accessibility'>mustnot-break-accessibility</a>] 
 				</li>
 			</ol>
 		</div>
