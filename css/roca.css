@@ -1,0 +1,37 @@
+body {
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+header.main {
+  margin-top: 40px;
+  border-bottom: 0;
+}
+
+header.main h1 {
+  font-size: 54px;
+  margin-bottom: 9px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+header.main h1 small {
+  letter-spacing: 0px;
+  font-size: 16px;
+}
+
+header.main h1, p {
+  margin-right: 0;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+h3.license {
+  margin-bottom: 10px;
+}
+
+ol li {
+  margin-top: 5px;
+}

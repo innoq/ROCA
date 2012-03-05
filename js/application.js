@@ -1,8 +1,7 @@
-
-
 (function($){
 	
 	$(function() {
+	  
 		$('#disqus_thread').disqus({
 			domain:     "roca-style",
 			title:      document.title,
