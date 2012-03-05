@@ -68,6 +68,10 @@ title: "ROCA: Resource-oriented Client Architecture"
     they include all of the state needed for the server to
     process them. [<a href='#should-auth'>should-auth</a>]
   </li>
+  <li>
+    <a name='should-historyapi'></a>Any dynamic routing or URI state modification triggered
+    by JavaScript on the client side should use the HTML5 History API. [<a href='#should-auth'>should-auth</a>] 
+  </li>
 </ol>
 
 
@@ -120,6 +124,10 @@ title: "ROCA: Resource-oriented Client Architecture"
 		to be enabled to make any
 		sense of the application. [<a href='#mustnot-jsengine'>mustnot-jsengine</a>]
 	</li>
+	<li><a name='shouldnot-jsrouting'></a>Routing is done wholly on the client side: JavaScript is used to generate
+	  and maintain URIs used all over the application, at worst involving hacks like hash-bang URI components.
+	  [<a href='#mustnot-jsrouting'>mustnot-jsrouting</a>]
+  </li>
 	<li><a name='mustnot-break-accessibility'></a>Tools for accessibility,
 		e.g. screen readers, can't be used. [<a href='#mustnot-break-accessibility'>mustnot-break-accessibility</a>] 
 	</li>
