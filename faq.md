@@ -51,12 +51,12 @@ best of both worlds.
   
 ### Who's behind ROCA?
 
-The ROCA style itself is nothing new and can be seen in the
-wild in any number of Web applications. The name and this
-document have been created by Till Schulte-Coerne, Stefan
-Tilkov, Phillip Ghadir and Josh Graham, with lots of valuable input
-from a number of other folks, most notably from internal discussions
-at innoQ as well as a presentation on ROCA at SpeakerConf 2012.
+The ROCA style itself is nothing new and can be seen in the wild in
+any number of Web applications. The name and this document have been
+created by Till Schulte-Coerne, Stefan Tilkov, Robert Glaser, Phillip
+Ghadir and Josh Graham, with lots of valuable input from a number of
+other folks, most notably from internal discussions at innoQ as well
+as a presentation on ROCA at SpeakerConf 2012.
 
 ### How can I use this document?
 
