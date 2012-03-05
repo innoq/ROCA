@@ -32,14 +32,18 @@ title: "ROCA: Resource-oriented Client Architecture"
 		i.e. the server exposes a set of resources with their own URIs
 		that are meaningful to a user sitting in front of a browser, all
 		of the information necessary for handling a request is contained
-		in the request itself and the resource state maintained by the
+		in the request itself and the resource state is maintained by the
 		server (stateless
 		communication). [<a href='#must-rest'>must-rest</a>]
 	</li>
-	<li><a name='must-server'></a>The core application
-		logic is contained on the server, and invoked by
-		interacting with it through
-		RESTful HTTP requests. [<a href='#must-server'>must-server</a>]
+	<li><a name='must-server'></a>All application logic resides
+	  on the server; the client interacts with the server through
+	  RESTful HTTP requests. [<a href='#must-server'>must-server</a>]
+	</li>
+	<li><a name='must-non-browser></a>It must be possible to use
+	  the server's logic through user agents other than a browser,
+	  e.g. a command line client such as curl or
+	  wget. [<a href='#must-non-browser>must-non-browser</a>]
 	</li>
 	<li><a name='must-html'></a>The server returns structured HTML markup that is
 		independent of layout information; CSS is used for
@@ -50,7 +54,7 @@ title: "ROCA: Resource-oriented Client Architecture"
 		title="Progressive enhancement">progressive enhancement</a>, JavaScript is
 		used <a href="http://en.wikipedia.org/wiki/Unobtrusive_JavaScript" 
 		title="Unobtrusive JavaScript">unobtrusively</a>
-		and the application is still usable (albeit with a
+		and the application remains usable (albeit with a
 		decrease in usability and convenience) if JavaScript is
 		disabled. [<a href='#must-jslimits'>must-jslimits</a>]
 	</li>

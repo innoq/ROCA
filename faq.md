@@ -28,10 +28,11 @@ aspects described above.
 If you really need a framework, we recommend you
 try [here](http://www.dafk.net/what/).
 
-### What are good frameworks that are a good choice for the ROCA
-style?  We plan to include a section on this, but would like to test
-the community's reaction first. Frankly, we don't want to risk ROCA
-being associated with any particular framework or even community.
+### What are good frameworks that are a good choice for the ROCA style?  
+
+We plan to include a section on this, but would like to test the
+community's reaction first. Frankly, we don't want to risk ROCA being
+associated with any particular framework or even community.
 
 ### But what about single-page apps? Aren't they the future?
 
@@ -48,6 +49,19 @@ an entirely awesome idea. That doesn't mean you have to degrade the
 browser into a runtime for a custom UI engine. It's perfectly possible
 to use JavaScript unobtrusively, which will in our view give you the
 best of both worlds.
+
+### But not everything is a resource! How about dashboards, portal pages, etc.?
+  
+Yes, everything is a resource, at least if we're talking about the
+Web. Because that's the whole point of it. If it's a dashboard we're
+talking about, then the resource is the dashboard; if it's a portal
+you're looking for, you might consider that your browser already does
+many things one usually expects a portal to do.
+
+### Is is either 100% ROCA compliance or nothing?
+
+Of course not. The whole point of this site, though, is to give a
+reference that one can compare design decisions to.
   
 ### Who's behind ROCA?
 
