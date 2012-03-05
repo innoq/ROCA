@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "ROCA: Resource-oriented Client Architecture - Q&A"
+title: "ROCA: Resource-oriented Client Architecture - FAQ"
 ---
 
-Q&A
+Frequently Asked Questions
 ---
 
 ### Why ROCA?
