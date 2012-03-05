@@ -58,7 +58,7 @@ talking about, then the resource is the dashboard; if it's a portal
 you're looking for, you might consider that your browser already does
 many things one usually expects a portal to do.
 
-### Is is either 100% ROCA compliance or nothing?
+### Is it either 100% ROCA compliance or nothing?
 
 Of course not. The whole point of this site, though, is to give a
 reference that one can compare design decisions to.
