@@ -20,7 +20,8 @@ title: "ROCA: Resource-oriented Client Architecture"
 	or tooling - that embodies the principles of what we consider to
 	be good web application architecture. Its purpose is to serve as
 	a reference, one that can be implemented as is or be compared to
-	other approaches to highlight diverging design decisions.
+	other approaches to highlight diverging design
+	decisions.
 </p>
 
 <h2>Mandatory Requirements</h2>
@@ -40,7 +41,9 @@ title: "ROCA: Resource-oriented Client Architecture"
 	</li>
 	<li><a name='must-server'></a>All application logic resides
 	  on the server; the client interacts with the server through
-	  RESTful HTTP requests. [<a href='#must-server'>must-server</a>]
+	  RESTful HTTP requests. For performance or user experience
+	  reasons, some code may exist on both client and server
+	  (e.g. for field validations). [<a href='#must-server'>must-server</a>]
 	</li>
 	<li><a name='must-non-browser'></a>It must be possible to use
 	  the server's logic through user agents other than a browser,
@@ -68,11 +71,15 @@ title: "ROCA: Resource-oriented Client Architecture"
   <li><a name='should-formats'></a>Resources have additional representations in other formats, e.g.
     JSON and/or XML. [<a href='#should-formats'>should-formats</a>]
   </li>
-  <li><a name='should-auth'></a>All authenticated communication relies on HTTP Basic
-    Authentication over SSL (or Client
-    Certificates). Alternatively, cookies can be used if
-    they include all of the state needed for the server to
-    process them. [<a href='#should-auth'>should-auth</a>]
+  <li><a name='should-auth'></a>All authenticated communication relies
+    on HTTP Basic Authentication over SSL (or Client
+    Certificates). Alternatively, because of browser limits in
+    handling basic auth (e.g. no logout, no styling), form-based
+    authentication in conjunction with cookies can be used. If cookies
+    are used, if they should include all of the state needed for the
+    server to process them, and another authentication mechanism
+    should be supported for non-browser
+    access. [<a href='#should-auth'>should-auth</a>]
   </li>
   <li>
     <a name='should-historyapi'></a>Any dynamic routing or URI state modification triggered
@@ -86,7 +93,7 @@ title: "ROCA: Resource-oriented Client Architecture"
 <ol>
 	<li><a name='mustnot-cookies'></a>Cookies
 	are used for purposes other than
-	authentication. [<a href='#mustnot-cookies'>mustnot-cookies</a>]
+	authentication or user tracking. [<a href='#mustnot-cookies'>mustnot-cookies</a>]
 	</li>
 	<li><a name='mustnot-session'></a>There
 		is session state beyond
