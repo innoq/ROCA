@@ -28,12 +28,13 @@ title: "ROCA: Resource-oriented Client Architecture"
 	style if it meets all of the following mandatory requirements:
 </p>
 <ol>
-	<li><a name='must-rest'></a>The server application adheres to REST principles,
-		i.e. the server exposes a set of resources with their own URIs
-		that are meaningful to a user sitting in front of a browser, all
-		of the information necessary for handling a request is contained
-		in the request itself and the resource state is maintained by the
-		server (stateless
+	<li><a name='must-rest'></a>The server application adheres to
+		REST principles, i.e. the server exposes a set of
+		resources that are meaningful to a user sitting in
+		front of a browser, each resource has its own URI, all
+		of the information necessary for handling a request is
+		contained in the request itself, and the resource state
+		is maintained by the server (stateless
 		communication). [<a href='#must-rest'>must-rest</a>]
 	</li>
 	<li><a name='must-server'></a>All application logic resides
