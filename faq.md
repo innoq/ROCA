@@ -63,6 +63,15 @@ many things one usually expects a portal to do.
 Of course not. The whole point of this site, though, is to give a
 reference that one can compare design decisions to.
   
+### All this talk about unobtrusiveness, and then you end up using _Disqus_?
+    
+You're right, Disqus violates ROCA -- which is really sad. It
+would probably not be too hard for them to simply offer a link to the
+discussion itself that would allow users who don't have JavaScript
+enabled to simply go to their site directly. Maybe we'll end up
+building something using their REST API, but for now, we simply chose
+to accept it.
+
 ### Who's behind ROCA?
 
 The ROCA style itself is nothing new and can be seen in the wild in
