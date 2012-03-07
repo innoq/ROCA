@@ -25,7 +25,7 @@ title: "ROCA: Resource-oriented Client Architecture"
 	style if it meets all of the following mandatory requirements:
 </p>
 <ol>
-	<li><a name='must-rest'></a>The server application adheres to
+	<li id="must-rest">The server application adheres to
 		REST principles, i.e. the server exposes a set of
 		resources that are meaningful to a user sitting in
 		front of a browser, each resource has its own URI, all
@@ -33,88 +33,87 @@ title: "ROCA: Resource-oriented Client Architecture"
 		contained in the request itself, HTTP methods are used
 		in line with their definition, and the resource state
 		is maintained by the server (stateless
-		communication). [<a href='#must-rest'>must-rest</a>]
+		communication). [<a href="#must-rest">must-rest</a>]
 	</li>
-	<li><a name='must-server'></a>All application logic resides
-	  on the server; the client interacts with the server through
-	  RESTful HTTP requests. For performance or user experience
-	  reasons, some code may exist on both client and server
-	  (e.g. for field validations). [<a href='#must-server'>must-server</a>]
+	<li id="must-server">All application logic resides
+		on the server; the client interacts with the server through
+		RESTful HTTP requests. For performance or user experience
+		reasons, some code may exist on both client and server
+		(e.g. for field validations). [<a href="#must-server">must-server</a>]
 	</li>
-	<li><a name='must-non-browser'></a>It must be possible to use
-	  the server's logic through user agents other than a browser,
-	  e.g. a command line client such as curl or
-	  wget. [<a href='#must-non-browser'>must-non-browser</a>]
+	<li id="must-non-browser">It must be possible to use
+		the server's logic through user agents other than a browser,
+		e.g. a command line client such as curl or
+		wget. [<a href="#must-non-browser">must-non-browser</a>]
 	</li>
-	<li><a name='must-html'></a>The server returns structured HTML markup that is
+	<li id="must-html">The server returns structured HTML markup that is
 		independent of layout information; CSS is used for
-		formatting. [<a href='#must-html'>must-html</a>]
+		formatting. [<a href="#must-html">must-html</a>]
 	</li>
-	<li><a name='must-jslimits'></a>In line with the principles
+	<li id="must-jslimits">In line with the principles
 		of <a href="http://en.wikipedia.org/wiki/Progressive_enhancement" 
 		title="Progressive enhancement">progressive enhancement</a>, JavaScript is
 		used <a href="http://en.wikipedia.org/wiki/Unobtrusive_JavaScript" 
 		title="Unobtrusive JavaScript">unobtrusively</a>
 		and the application remains usable (albeit with a
 		decrease in usability and convenience) if JavaScript is
-		disabled. [<a href='#must-jslimits'>must-jslimits</a>]
+		disabled. [<a href="#must-jslimits">must-jslimits</a>]
 	</li>
 </ol>
 
 <h2>Suggested Practices</h2>
 <p>The following concepts are encouraged, but not mandatory:</p>
 <ol>
-  <li><a name='should-formats'></a>Resources have additional representations in other formats, e.g.
-    JSON and/or XML. [<a href='#should-formats'>should-formats</a>]
-  </li>
-  <li><a name='should-auth'></a>All authenticated communication relies
-    on HTTP Basic Authentication over SSL (or Client
-    Certificates). Alternatively, because of browser limits in
-    handling basic auth (e.g. no logout, no styling), form-based
-    authentication in conjunction with cookies can be used. If cookies
-    are used, they should include all of the state needed for the
-    server to process them, and another authentication mechanism
-    should be supported for non-browser
-    access. [<a href='#should-auth'>should-auth</a>]
-  </li>
-  <li>
-    <a name='should-historyapi'></a>Any dynamic routing or URI state modification triggered
-    by JavaScript on the client side should use the HTML5 History API. [<a href='#should-historyapi'>should-historyapi</a>] 
-  </li>
+	<li id="should-formats">Resources have additional representations in other formats, e.g.
+		JSON and/or XML. [<a href="#should-formats">should-formats</a>]
+	</li>
+	<li id="should-auth">All authenticated communication relies
+		on HTTP Basic Authentication over SSL (or Client
+		Certificates). Alternatively, because of browser limits in
+		handling basic auth (e.g. no logout, no styling), form-based
+		authentication in conjunction with cookies can be used. If cookies
+		are used, they should include all of the state needed for the
+		server to process them, and another authentication mechanism
+		should be supported for non-browser
+		access. [<a href="#should-auth">should-auth</a>]
+	</li>
+	<li id="should-historyapi">Any dynamic routing or URI state modification triggered
+		by JavaScript on the client side should use the HTML5 History API. [<a href="#should-historyapi">should-historyapi</a>] 
+	</li>
 </ol>
 
 
 <h2>Violations</h2>
 <p>The following characteristics are clear indications that the ROCA style is violated:</p>
 <ol>
-	<li><a name='mustnot-cookies'></a>Cookies
-	are used for purposes other than
-	authentication or user tracking. [<a href='#mustnot-cookies'>mustnot-cookies</a>]
+	<li id="mustnot-cookies">Cookies
+		are used for purposes other than
+		authentication or user tracking. [<a href="#mustnot-cookies">mustnot-cookies</a>]
 	</li>
-	<li><a name='mustnot-session'></a>There
+	<li id="mustnot-session">There
 		is session state beyond
 		what&#8217;s needed for simple
 		algorithmic validation of
 		authentication
-		information. [<a href='#mustnot-session'>mustnot-session</a>]
+		information. [<a href="#mustnot-session">mustnot-session</a>]
 	</li>
-	<li><a name='mustnot-break-back'></a>The back and forward buttons don't
+	<li id="mustnot-break-back">The back and forward buttons don't
 		work as expected, i.e. they
 		don't take the user where they
 		expect to be taken to (the
 		last meaningful resource they
-		worked with). [<a href='#mustnot-break-back'>mustnot-break-back</a>]
+		worked with). [<a href="#mustnot-break-back">mustnot-break-back</a>]
 	</li>
-	<li><a name='mustnot-break-link'></a>A user can't link to a specific
+	<li id="mustnot-break-link">A user can't link to a specific
 		piece of information, e.g. by
 		copying the address from the
 		browser's address bar and
 		pasting it into an email, by
 		creating a bookmark, or using
 		any of the fancier ways to
-		share URIs. [<a href='#mustnot-break-link'>mustnot-break-link</a>]
+		share URIs. [<a href="#mustnot-break-link">mustnot-break-link</a>]
 	</li>
-	<li><a name='mustnot-break-refresh'></a>A browser refresh causes
+	<li id="mustnot-break-refresh">A browser refresh causes
 		unexpected behavior, e.g. a
 		re-rendering of the login or
 		home page instead of the page
@@ -125,25 +124,26 @@ title: "ROCA: Resource-oriented Client Architecture"
 		(when the user doesn't recall
 		submitting any data,
 		indicating a mis-use of the
-		POST verb). [<a href='#mustnot-break-refresh'>mustnot-break-refresh</a>]
+		POST verb). [<a href="#mustnot-break-refresh">mustnot-break-refresh</a>]
 	</li>
-	<li><a name='mustnot-jsengine'></a>The content sent to the client mainly consists of
+	<li id="mustnot-jsengine">The content sent to the client mainly consists of
 		JavaScript that retrieves the real content from the
 		server, requiring JavaScript
 		to be enabled to make any
-		sense of the application. [<a href='#mustnot-jsengine'>mustnot-jsengine</a>]
+		sense of the application. [<a href="#mustnot-jsengine">mustnot-jsengine</a>]
 	</li>
-	<li><a name='shouldnot-jsrouting'></a>Routing is done wholly on the client side: JavaScript is used to generate
-	  and maintain URIs used all over the application, at worst involving hacks like hash-bang URI components.
-	  [<a href='#mustnot-jsrouting'>mustnot-jsrouting</a>]
-  </li>
-	<li><a name='mustnot-break-accessibility'></a>Tools for accessibility,
-		e.g. screen readers, can't be used. [<a href='#mustnot-break-accessibility'>mustnot-break-accessibility</a>] 
+	<li id="shouldnot-jsrouting">Routing is done wholly on the client side: JavaScript is used to generate
+		and maintain URIs used all over the application, at worst involving hacks like hash-bang URI components.
+		[<a href="#mustnot-jsrouting">mustnot-jsrouting</a>]
+	</li>
+	<li id="mustnot-break-accessibility">Tools for accessibility,
+		e.g. screen readers, can't be used. [<a href="#mustnot-break-accessibility">mustnot-break-accessibility</a>] 
 	</li>
 </ol>
 
-<hr>
+<hr />
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">ROCA</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />
+<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">ROCA</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 
 
