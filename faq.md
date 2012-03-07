@@ -8,9 +8,9 @@ Frequently Asked Questions
 
 ### Why ROCA?
 
-In our work, we found that it's far easier to get ideas
-across if they can be referred to by name, compared against
-other approaches, and thus be made tangible. ROCA is an attempt
+In our work, we find it's much easier to get ideas
+across if they can be referred to by name (compared to
+other approaches) and thus be made tangible. ROCA is an attempt
 to provide a reference for exactly this purpose.
 
 ### Why "ROCA"?
@@ -25,7 +25,7 @@ intended to be framework-agnostic. You can pick any programming
 language, library, or framework, as long as you adhere to the
 aspects described above.
 
-If you really need a framework, we recommend you
+If you really want the ROCA framework, we recommend you
 try [here](http://www.dafk.net/what/).
 
 ### What are good frameworks that are a good choice for the ROCA style?  
