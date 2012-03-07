@@ -25,8 +25,13 @@ intended to be framework-agnostic. You can pick any programming
 language, library, or framework, as long as you adhere to the
 aspects described above.
 
-If you really need a framework, we recommend you
-try [here](http://www.dafk.net/what/).
+Frameworks are sometimes driven more by their authors' personal taste,
+the intent to create something new, a desire to hide the Web and turn
+it into something different, or any combination of these factors. But
+even if they are totally in line with the ROCA guidelines, they can
+often be used in many different ways. That's why we don't want to tie
+the whole thing more to how a Web application engineer approaches
+design than to any particular framework.
 
 ### What are good frameworks that are a good choice for the ROCA style?  
 
