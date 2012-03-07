@@ -4,21 +4,26 @@
   <title>{{ page.title }}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- HTML5 shim, for IE6-8 support of HTML elements -->
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  
-  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="css/roca.css" type="text/css" charset="utf-8">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css">
+  <link rel="stylesheet" href="css/roca.css" type="text/css">
 </head>
 <body>
   <div class="container">
-    
+
     <header class="main">
-      <h1>ROCA <small>Resource-oriented Client Architecture</small></h1>
+      <h1>
+        <a href="index.html">
+          ROCA
+          <small>Resource-oriented Client Architecture</small>
+        </a>
+      </h1>
       <p class="lead">A collection of simple recommendations for decent Web application frontends</p>
       <div class="subnav">
         <ul class="nav nav-pills">
@@ -29,11 +34,11 @@
         </ul>
       </div>
     </header>
-    
+
     <hr>
-    
+
     {{ content }}
-    
+
   </div>
 </body>
 </html>
