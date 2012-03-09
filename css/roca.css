@@ -35,3 +35,9 @@ h3.license {
 ol li {
   margin-top: 5px;
 }
+
+h1 a:link, h1 a:visited {
+  text-decoration: none;
+  color:black;
+}
+

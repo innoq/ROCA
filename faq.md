@@ -8,9 +8,9 @@ Frequently Asked Questions
 
 ### Why ROCA?
 
-In our work, we found that it's far easier to get ideas
-across if they can be referred to by name, compared against
-other approaches, and thus be made tangible. ROCA is an attempt
+In our work, we find it's much easier to get ideas
+across if they can be referred to by name (compared to
+other approaches) and thus be made tangible. ROCA is an attempt
 to provide a reference for exactly this purpose.
 
 ### Why "ROCA"?
