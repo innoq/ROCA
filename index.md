@@ -2,28 +2,34 @@
 layout: default
 title: "ROCA: Resource-oriented Client Architecture"
 ---
-<h2>Introduction</h2>
-<p>A Web application's architecture is heavily influenced by the
-	design decisions, both implicit and explicit, that have been
-	made by framework developers. Sometimes these decisions are
-	consciously accepted as being in line with the intended overall
-	system architecture. More often, though, they are accepted
-	simply because developers assume they embody the state of the
-	art of development practices.
-</p>
-<p>ROCA is an attempt to define a set of recommendations &mdash;
-	independent of any particular framework, programming language,
-	or tooling &mdash; that embodies the principles of what we consider to
-	be good web application architecture. Its purpose is to serve as
-	a reference, one that can be implemented as-is or be compared to
-	other approaches to highlight diverging design
-	decisions.
-</p>
 
-<h2>Mandatory Requirements</h2>
-<p>A web application's architecture is compliant to the ROCA
-	style if it meets all of the following mandatory requirements:
-</p>
+
+Introduction
+------------
+
+A Web application's architecture is heavily influenced by the
+design decisions, both implicit and explicit, that have been
+made by framework developers. Sometimes these decisions are
+consciously accepted as being in line with the intended overall
+system architecture. More often, though, they are accepted
+simply because developers assume they embody the state of the
+art of development practices.
+
+ROCA is an attempt to define a set of recommendations &mdash;
+independent of any particular framework, programming language,
+or tooling &mdash; that embodies the principles of what we consider to
+be good web application architecture. Its purpose is to serve as
+a reference, one that can be implemented as-is or be compared to
+other approaches to highlight diverging design
+decisions.
+
+
+Mandatory Requirements
+----------------------
+
+A web application's architecture is compliant to the ROCA
+style if it meets all of the following mandatory requirements:
+
 <ol>
 	<li id="must-rest">The server application adheres to
 		REST principles, i.e. the server exposes a set of
@@ -43,7 +49,7 @@ title: "ROCA: Resource-oriented Client Architecture"
 		redundantly on both the client and the server. 
 		Thus, due to the requirement above, application logic must not reside 
 		on the client-side.
-		 [<a href="#must-no-duplication" class="anchor">must-no-duplication</a>]
+		[<a href="#must-no-duplication" class="anchor">must-no-duplication</a>]
 	</li>
 	<li id="must-non-browser">It must be possible to use
 		the server's logic through user agents other than a browser,
@@ -73,8 +79,12 @@ title: "ROCA: Resource-oriented Client Architecture"
 	</li>
 </ol>
 
-<h2>Suggested Practices</h2>
-<p>The following concepts are encouraged, but not mandatory:</p>
+
+Suggested Practices
+-------------------
+
+The following concepts are encouraged, but not mandatory:
+
 <ol>
 	<li id="should-formats">Resources have additional representations in other formats, e.g.
 		JSON and/or XML. [<a href="#should-formats">should-formats</a>]
@@ -97,8 +107,11 @@ title: "ROCA: Resource-oriented Client Architecture"
 </ol>
 
 
-<h2>Violations</h2>
-<p>The following characteristics are clear indications that the ROCA style is violated:</p>
+Violations
+----------
+
+The following characteristics are clear indications that the ROCA style is violated:
+
 <ol>
 	<li id="mustnot-cookies">Cookies
 		are used for purposes other than
@@ -165,13 +178,15 @@ title: "ROCA: Resource-oriented Client Architecture"
 	</li>
 </ol>
 
-<hr />
+<hr>
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
-  <img alt="Creative Commons License"
-       src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />
-<span xmlns:dct="http://purl.org/dc/terms/"
-      href="http://purl.org/dc/dcmitype/Text" property="dct:title"
-      rel="dct:type">ROCA</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
-
-
+<p>
+	<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+		<img alt="Creative Commons License"
+				src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png">
+	</a>
+	<br>
+	<span xmlns:dct="http://purl.org/dc/terms/"
+			href="http://purl.org/dc/dcmitype/Text" property="dct:title"
+			rel="dct:type">ROCA</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</p>
