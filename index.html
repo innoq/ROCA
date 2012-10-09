@@ -31,7 +31,7 @@ title: "ROCA: Resource-oriented Client Architecture"
     Client and server are largely independent 
     from, yet complement each other.
 
-<h2 id="server-side">Server-Side</h2>
+<h2 id="server-side">Server-side</h2>
 <ol>
 	<li id="rest">The server application adheres to
 		REST principles, i.e. it exposes a set of
@@ -44,8 +44,10 @@ title: "ROCA: Resource-oriented Client Architecture"
 		communication). [<a href="#rest">rest</a>]
 	</li>
 	<li id="application-logic">All application logic resides
-		on the server-side; the client interacts with the server through
-		RESTful HTTP requests. [<a href="#application-logic">application-logic</a>]
+		on the server. [<a href="#application-logic">application-logic</a>]
+	</li>
+	<li id="http">The client interacts with the server through
+	    RESTful HTTP requests. [<a href="#http">http</a>]
 	</li>
 	<li id="link">A user must be able to link to a specific
 		piece of information, e.g. by copying the address from the
