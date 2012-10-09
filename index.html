@@ -20,42 +20,42 @@ title: "ROCA: Resource-oriented Client Architecture"
 	decisions.
 </p>
 <p>ROCA splits into two parts: The <a href="#server-side">server-side</a> 
-    and the <a href="#client-side">client side</a> architecture. 
-    The server-side mostly consist of the idea of building
-    RESTful backends serving human readable content as well as public (or 
-    internal) services for machine to machine communication.
+    and the <a href="#client-side">client-side</a> architecture. 
+    The server-side consists of 
+    RESTful backends, serving human-readable content as well as
+    services for machine-to-machine communication, either public or internal.
     The client-side focuses on a sustainable and maintainable usage of
-    JavaScript and CSS by using the principle of Progressive 
-    Enhancement, a technique with a heavy impact on nearly every
-    web-technology like HTML or HTTP.
-    Both, the client- and the server-side, are widely independent 
-    from each other. But in our option they are nearly a perfect fit.
+    JavaScript and CSS, based on the principle of Progressive 
+    Enhancement. This technique is pursued by nearly every basic
+    web technology, e.g. HTML or HTTP.
+    Client and server are largely independent 
+    from, yet complement each other.
 
-<h2 id="client-side">Server-Side</h2>
+<h2 id="server-side">Server-Side</h2>
 <ol>
 	<li id="rest">The server application adheres to
-		REST principles, i.e. the server exposes a set of
+		REST principles, i.e. it exposes a set of
 		resources that are meaningful to a user sitting in
 		front of a browser, each resource has its own URI, all
 		of the information necessary for handling a request is
-		contained in the request itself, HTTP methods are used
+		contained within the request itself, HTTP methods are used
 		in line with their definition, and the resource state
 		is maintained by the server (stateless
 		communication). [<a href="#rest">rest</a>]
 	</li>
 	<li id="application-logic">All application logic resides
-		on the server; the client interacts with the server through
+		on the server-side; the client interacts with the server through
 		RESTful HTTP requests. [<a href="#application-logic">application-logic</a>]
 	</li>
 	<li id="link">A user must be able to link to a specific
 		piece of information, e.g. by copying the address from the
-		browser's address bar and pasting it into an email, by
+		browser's address bar and pasting it into an e-mail,
 		creating a bookmark, or using any of the fancier ways to
 		share URIs. [<a href="#link">link</a>]
 	</li>
 	<li id="non-browser">It must be possible to use
 		the server's logic through user agents other than a browser,
-		e.g. a command line client such as curl or
+		e.g. a command-line client such as curl or
 		wget. [<a href="#non-browser">non-browser</a>]
 	</li>
 	<li id="should-formats">Resources have additional representations in other formats, e.g.
@@ -98,15 +98,15 @@ title: "ROCA: Resource-oriented Client Architecture"
 		independent of layout information and client behavior. 
 		[<a href="#posh">posh</a>]
 	</li>
-	<li id="accessibility">It must be possible to access the pages information 
-	    and functionality by using Tools for accessibility like screen readers.
+	<li id="accessibility">It must be possible to access each page's information 
+	    and functionality by using accessibility tools like screen readers.
 	    [<a href="#accessibility">accessibility</a>]
 	</li>
 	<li id="layout">
 	    CSS is used for formatting and layouting. This is done following the 
 	    principles of <a href="http://en.wikipedia.org/wiki/Progressive_enhancement" 
-		title="Progressive enhancement">progressive enhancement</a> e.g. to allow
-		a browser not capable of CSS3 features still to use a CSS3 based site.
+		title="Progressive enhancement">progressive enhancement</a>, e.g. to allow
+		a browser not capable of CSS3 features still to use a CSS3-based site.
 	</li>
 	<li id="unobtrusive-javascript">In line with the principles
 		of <a href="http://en.wikipedia.org/wiki/Progressive_enhancement" 
@@ -123,7 +123,7 @@ title: "ROCA: Resource-oriented Client Architecture"
 		requirement</a>, application logic must not reside on the client-side.
 		 [<a href="#no-duplication" class="anchor">no-duplication</a>]
 	</li>
-	<li id="know-structure"> The server code may not "knows" the
+	<li id="know-structure"> The server code may not "know" the
 		HTML structures the client code generates (beyond CSS) or 
 		vice versa. Exceptions are some well defined HTML structures the server 
 		generates to initialize the client functionality above.
