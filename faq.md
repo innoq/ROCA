@@ -75,7 +75,22 @@ If CSS or JavaScript code is generated dynamically per-request - usually to
 inject state variables of some kind, e.g. user or item IDs - many of these
 benefits are invalidated. In particular, cacheability is reduced due to the
 response being request-dependent and maintainability suffers because
-functionality is spread across the code base.
+functionality is spread across the code base (not to mention the potential for
+subtle bugs due to the need for escaping injected values).
+
+For example, instead of something like this:
+
+    // HTML template
+    <script>var ROOT = "<? echo $root_url ?>";</script>
+
+    // JavaScript
+    var uri = ROOT + path;
+
+... we prefer this:
+
+    <a href="<? $root_url ?>" id="root-url">Home</a>
+
+    var uri = document.getElementById("root-url").getAttribute("href");
 
 ### Is it either 100% ROCA compliance or nothing?
 
