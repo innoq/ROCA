@@ -33,7 +33,7 @@ often be used in many different ways. That's why we want to tie
 the whole thing more to how a Web application engineer approaches
 design than to any particular framework.
 
-### What are good frameworks that are a good choice for the ROCA style?  
+### What are good frameworks that are a good choice for the ROCA style?
 
 We plan to include a section on this, but would like to test the
 community's reaction first. Frankly, we don't want to risk ROCA being
@@ -56,20 +56,34 @@ to use JavaScript unobtrusively, which will in our view give you the
 best of both worlds.
 
 ### But not everything is a resource! How about dashboards, portal pages, etc.?
-  
+
 Yes, everything is a resource, at least if we're talking about the
 Web. Because that's the whole point of it. If it's a dashboard we're
 talking about, then the resource is the dashboard; if it's a portal
 you're looking for, you might consider that your browser already does
 many things one usually expects a portal to do.
 
+### Why the insistence on "static assets" - why shouldn't the server generate JavaScript or CSS dynamically?
+
+Externalizing CSS and JavaScript code rather than inlining it in HTML has been
+[accepted consensus](http://developer.yahoo.com/performance/rules.html#external)
+for quite a while now. Not only does this provide performance benefits, it also
+encourages reusability and ensures separation of concerns, thus improving
+maintainability.
+
+If CSS or JavaScript code is generated dynamically per-request - usually to
+inject state variables of some kind, e.g. user or item IDs - many of these
+benefits are invalidated. In particular, cacheability is reduced due to the
+response being request-dependent and maintainability suffers because
+functionality is spread across the code base.
+
 ### Is it either 100% ROCA compliance or nothing?
 
 Of course not. The whole point of this site, though, is to give a
 reference that one can compare design decisions to.
-  
+
 ### All this talk about unobtrusiveness, and then you end up using _Disqus_?
-    
+
 You're right, Disqus violates ROCA -- which is really sad. It
 would probably not be too hard for them to simply offer a link to the
 discussion itself that would allow users who don't have JavaScript
@@ -96,7 +110,7 @@ compare or develop frameworks according to this style, and
 intend to be as open as reasonably possible while maintaining
 conceptual integrity.
 
-### Can I provide feedback?  
+### Can I provide feedback?
 
 Of course, please use <a href='./discussion.html'>the comments</a> to share your thoughts. We
 welcome criticism as well as suggestions for improvement.
