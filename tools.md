@@ -17,6 +17,13 @@ help us expand this list!
 
 ### JavaScript
 
+* [Express](http://expressjs.com)
+
+### Python
+
+* [Flask](http://flask.pocoo.org)
+* [Django](https://www.djangoproject.com)
+
 ### Java
 
 ### .Net/C#
