@@ -63,13 +63,15 @@ title: "ROCA: Resource-oriented Client Architecture"
 	<li id="should-formats">Resources have additional representations in other formats, e.g.
 		JSON and/or XML. [<a href="#should-formats">should-formats</a>]
 	</li>
-	<li id="auth">All authenticated communication relies
-		on HTTP Basic Authentication over SSL (or Client
-		Certificates). Alternatively, because of browser limits in
-		handling basic auth (e.g. no logout, no styling), form-based
-		authentication in conjunction with cookies can be used. If cookies
-		are used, they should include all of the state needed for the
-		server to process them, and another authentication mechanism
+	<li id="auth">All authenticated communication relies on HTTP
+		Basic or Digest Authentication, typically combined
+		with SSL, possibly with client
+		certificates. Alternatively, because of the limits of
+		browser-native authentication (e.g. no logout, no
+		styling), form-based authentication in conjunction
+		with cookies can be used. If cookies are used, they
+		should include all of the state needed for the server
+		to process them, and another authentication mechanism
 		should be supported for non-browser
 		access. [<a href="#auth">auth</a>]
 	</li>
