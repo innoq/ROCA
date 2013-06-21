@@ -18,7 +18,7 @@ help us expand this list!
 ### JavaScript
 
 ### Java
-* [Spring MVC](http://www.springsource.org/features/modern-web) + [Spring HATEOAS](https://github.com/SpringSource/spring-hateoas#spring-hateoas)
+* [Spring MVC](http://www.springsource.org/features/modern-web) + [Spring HATEOAS](https://github.com/SpringSource/spring-hateoas#spring-hateoas) + [Thymeleaf](http://www.thymeleaf.org) (and [HTML5 Validation](http://html5valdialect.sourceforge.net))
 * [Jersey](https://jersey.java.net) (JAX-RS) + [MVC Templates](https://jersey.java.net/nonav/documentation/latest/mvc.html)
 * [Dropwizard](http://dropwizard.codahale.com)
 
