@@ -71,10 +71,10 @@ for quite a while now. Not only does this provide performance benefits, it also
 encourages reusability and ensures separation of concerns, thus improving
 maintainability.
 
-Many of these benefits are rendered ineffective when state is injected into CSS
-or JavaScript. In particular, cacheability is reduced and maintainability
-suffers due to functionality being spread across the code base (not to mention
-the potential for subtle bugs due to the need for escaping injected values).
+Many of these benefits are lost when state is injected into CSS or JavaScript.
+In particular, cacheability is reduced and maintainability suffers due to
+functionality being spread across the code base (not to mention the potential
+for subtle bugs due to the need for escaping injected values).
 
 For example, instead of something like this:
 
