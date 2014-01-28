@@ -1,4 +1,3 @@
-source :rubygems
+source "https://rubygems.org"
 
-gem "jekyll"
-gem "ruby-xslt"
+gem "github-pages"
