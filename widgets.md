@@ -22,11 +22,11 @@ concept, but with special emphasis on accessibility.
 
 ### Input Suggestions
 
-[Autocomplete](http://jqueryui.com/autocomplete/) is another from jQuery UI's
-repertoire, populating a regular input field with arbitrary suggestions. Note,
-however, that there is no standard convention for specifying the respective
-source for suggestions, leaving it up to the user to ensure their solution is
-ROCA compliant.
+[Autocomplete](http://jqueryui.com/autocomplete/) is yet another example from
+jQuery UI's repertoire, populating a regular input field with arbitrary
+suggestions. Note, however, that there is no standard convention for specifying
+the respective source for suggestions, leaving it up to the user to ensure their
+solution is ROCA compliant.
 
 ### Date and Time Selection
 
