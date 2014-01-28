@@ -20,9 +20,17 @@ unavailable, thanks to a solid markup foundation.
 [Accessible Tabs](https://github.com/ginader/Accessible-Tabs) is similar in
 concept, but with special emphasis on accessibility.
 
+### Input Suggestions
+
+[Autocomplete](http://jqueryui.com/autocomplete/) is another from jQuery UI's
+repertoire, populating a regular input field with arbitrary suggestions. Note,
+however, that there is no standard convention for specifying the respective
+source for suggestions, leaving it up to the user to ensure their solution is
+ROCA compliant.
+
 ### Date and Time Selection
 
-Here too jQuery UI provides an exemplary implementation with its
+Again jQuery UI provides an exemplary implementation with its
 [datepicker](http://jqueryui.com/datepicker/), a complex widget which is used to
 populate a regular input field.
 
