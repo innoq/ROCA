@@ -7,7 +7,7 @@ JavaScript Widgets
 ------------------
 
 This page lists suggestions for UI widgets which can be used unobtrusively.
-[Suggestions](discussion.html) and
+Further [suggestions](discussion.html) and
 [contributions](https://github.com/innoq/ROCA) are welcome!
 
 ### Content Sections
