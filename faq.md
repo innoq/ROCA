@@ -18,6 +18,15 @@ to provide a reference for exactly this purpose.
 It was the most reasonable and easy-to-remember name we could
 come up with that also resolved to a meaningful acronym.
 
+### What are the limits?
+
+As with every architectural choice, there are trade-offs to be made. Sometimes
+strict adherence to ROCA principles is not practical or sensible, so it might be
+judicious to consciously depart from this path for selected parts of an
+otherwise ROCA compliant application. Of course one should be conscious of the
+costs associated with such a decision - however, that's no different from other
+optimizations, e.g. database normalization.
+
 ### How can I install the framework?
 
 You don't &#8211; that's the point. ROCA is
