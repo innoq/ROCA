@@ -18,7 +18,7 @@ to provide a reference for exactly this purpose.
 It was the most reasonable and easy-to-remember name we could
 come up with that also resolved to a meaningful acronym.
 
-### What are the limits?
+### Is ROCA the one true way?
 
 As with every architectural choice, there are trade-offs to be made. Sometimes
 strict adherence to ROCA principles is not practical or sensible, so it might be
