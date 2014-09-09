@@ -8,10 +8,8 @@ ul:not(.nav) {
     margin-left: 0;
     list-style-type: none;
 
-    a:first-child { // title
-        display: block;
+    h3 { // title
         margin-top: 1em;
-        font-size: 1.2em;
     }
 
     ul { // tags
