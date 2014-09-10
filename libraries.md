@@ -131,3 +131,9 @@ Further [suggestions](discussion.html) and
 
   Based on a regular list of images, ensuring that contents remain accessible
   both with and without JavaScript.
+
+* ### [DropzoneJS](http://www.dropzonejs.com)
+  augments regular file upload forms with a drag & drop UI and image previews
+
+  This is an excellent example of progressive enhancement, as it leverages HTML
+  forms rather than circumventing them.
