@@ -96,6 +96,16 @@ Further [suggestions](discussion.html) and
   * autocomplete
   * jQuery
 
+* ### [Select2](http://ivaynberg.github.io/select2/)
+  augments `<select>` elements to allow for filtering, autocomplete etc.
+
+  * input
+  * search
+  * sortable
+  * filterable
+  * autocomplete
+  * jQuery
+
 * ### [complete.ly](http://complete-ly.appspot.com)
   is a minimal library for autocompletion which also lends itself to be used in
   natural language forms
