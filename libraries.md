@@ -97,7 +97,8 @@ Further [suggestions](discussion.html) and
   * jQuery
 
 * ### [Select2](http://ivaynberg.github.io/select2/)
-  augments `<select>` elements to allow for filtering, autocomplete etc.
+  augments `<select>` or `<input>` elements to allow for filtering,
+  autocomplete, tagging etc.
 
   * input
   * search
@@ -143,6 +144,12 @@ Further [suggestions](discussion.html) and
   both with and without JavaScript.
 
   * gallery
+
+* ### [Sortable](http://rubaxa.github.io/Sortable/)
+  adds drag and drop functionality to lists
+
+  * sortable
+  * dragndrop
 
 * ### [DropzoneJS](http://www.dropzonejs.com)
   augments regular file upload forms with a drag & drop UI and image previews
