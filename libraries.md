@@ -159,3 +159,11 @@ Further [suggestions](discussion.html) and
 
   * input
   * upload
+
+* ### [jQuery Validation](http://jqueryvalidation.org)
+  enables client-side form validation using a declarative API, in part based on
+  HTML5 attributes
+
+  * input
+  * validation
+  * jQuery
