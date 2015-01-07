@@ -18,6 +18,12 @@ to provide a reference for exactly this purpose.
 It was the most reasonable and easy-to-remember name we could
 come up with that also resolved to a meaningful acronym.
 
+### Does ROCA intend to replace other concepts?
+
+Not at all. ROCA builds upon well-understood concepts like REST and progressive
+enhancement ([some](http://burningchrome.com) have called it "a distillation of
+a decade of web development experience").
+
 ### Is ROCA the one true way?
 
 As with every architectural choice, there are trade-offs to be made. Sometimes
