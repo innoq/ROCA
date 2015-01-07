@@ -20,9 +20,10 @@ come up with that also resolved to a meaningful acronym.
 
 ### Does ROCA intend to replace other concepts?
 
-Not at all. ROCA builds upon well-understood concepts like REST and progressive
-enhancement ([some](http://burningchrome.com) have called it "a distillation of
-a decade of web development experience").
+Not at all. ROCA builds upon well-established concepts like REST and
+progressive enhancement, reinforcing their importance.
+([Some](http://burningchrome.com) have called ROCA "a distillation of a decade
+of web development experience".)
 
 ### Is ROCA the one true way?
 
