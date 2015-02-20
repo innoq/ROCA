@@ -1,3 +1,2 @@
 safe:        true
-highlighter: true
 exclude:     ["vendor"]
