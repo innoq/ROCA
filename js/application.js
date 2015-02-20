@@ -1,7 +1,10 @@
 (function($){
-	
+
 	$(function() {
-	  
+	  if(!$.disqus) {
+			// Quick exit if the Disqus plugin is missing for whatever reason
+			return;
+		}
 		$('#disqus_thread').disqus({
 			domain:     "roca-style",
 			title:      document.title,
@@ -14,6 +17,7 @@
 				// this is when your disqus comments finally load
 				console.log("Comment count: " + $.disqus.commentCount().toString());
 				console.log("Reaction count: " + $.disqus.reactionCount().toString());
+				$('#disqus_fallback').remove();
 			},
 			added: function(comments) {
 				// do something with the newly added comment divs.
@@ -24,4 +28,4 @@
 		});
 	});
 
-}(jQuery))
+}(jQuery));
