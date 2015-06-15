@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="330px" height="130px" viewBox="0 0 330 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>ROCA Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Rectangle-48-Copy-2-+-Rectangle-48-+-ROCA-Copy-2-Copy-Copy-Copy-Copy" sketch:type="MSLayerGroup">
+            <g id="ROCA-Logo">
+                <rect id="Rectangle-48-Copy-7" fill-opacity="0.152853261" fill="#69A0FF" sketch:type="MSShapeGroup" x="20" y="20" width="310" height="110" rx="5"></rect>
+                <rect id="Rectangle-48-Copy-2" fill-opacity="0.421988225" fill="#69A0FF" sketch:type="MSShapeGroup" x="10" y="10" width="310" height="110" rx="5"></rect>
+                <rect id="Rectangle-48" fill="#69A0FF" sketch:type="MSShapeGroup" x="0" y="0" width="310" height="110" rx="5"></rect>
+                <text id="ROCA-Copy-6" sketch:type="MSTextLayer" font-family="Lato" font-size="90" font-style="italic" font-weight="686" line-spacing="80" fill="#FFFFFF">
+                    <tspan x="38" y="89">ROCA</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
