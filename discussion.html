@@ -3,18 +3,28 @@ layout: default
 title: "ROCA: Resource-oriented Client Architecture - Discussion"
 ---
 
-<p>Please also make sure to check out
-  the <a href='/faq.html'>FAQ</a>.</p>
+<h2>Discussion</h2>
 
-<p id="disqus_fallback">You can head over to the discussion at <a href="https://disqus.com/home/discussion/roca-style/roca_resource_oriented_client_architecture_discussion/">Disqus</a>.</p>
+<p id="disqus_fallback">
+  <noscript>
+    You can head over to the discussion at
+    <a rel="nofollow" href="https://disqus.com/home/discussion/roca-style/roca_resource_oriented_client_architecture_discussion/">Disqus</a>.
+  </noscript>
+  Please also make sure to check out the <a href='/faq.html'>FAQ</a>.
+</p>
 
-<div id="disqus_thread" />
+<div id="disqus_thread"></div>
 
-<script charset="utf-8"
-	src="http://cachedcommons.org/cache/jquery/1.4.2/javascripts/jquery.js"
-	type="text/javascript"></script>
-<script charset="utf-8"
-	src="http://cachedcommons.org/cache/jquery-disqus/1.0.0/javascripts/jquery-disqus.js"
-	type="text/javascript"></script>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    // Required: on line below, replace text in quotes with your forum shortname
+    var disqus_shortname = 'roca-style';
+    var disqus_url = "http://roca-style.org/discussion.html"; // Important to show the correct thread
 
-<script charset="utf-8" src="js/application.js" type="text/javascript"></script>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>

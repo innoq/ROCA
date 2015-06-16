@@ -17,10 +17,12 @@ ul:not(.nav) {
 
         li {
             float: left;
+            font-size: 1.4rem;
             margin-right: 1em;
             border-radius: 1em;
             padding: 0.2em 0.5em;
-            background-color: #EEE; // XXX: use existing color palette?
+            background-color: #EEE;
+            text-transform: uppercase;
         }
     }
 }
