@@ -167,3 +167,10 @@ Further [suggestions](discussion.html) and
   * input
   * validation
   * jQuery
+
+* ### [Parsley](http://parsleyjs.org/)
+  easy client-side form validation unobtrusively based on HTML5 `data-` atttributes
+
+  * input
+  * validation
+  * jQuery
