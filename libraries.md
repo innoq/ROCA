@@ -185,6 +185,6 @@ Further [suggestions](discussion.html) and
   * jQuery
 
 * ### [wysihtml](http://wysihtml.com)
-  provides rich-text editing by augmenting a `textarea` element
+  provides rich-text editing by augmenting a `<textarea>` element
 
   * WYSIWYG
