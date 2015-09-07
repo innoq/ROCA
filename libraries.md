@@ -188,3 +188,17 @@ Further [suggestions](discussion.html) and
   provides rich-text editing by augmenting a `<textarea>` element
 
   * WYSIWYG
+
+* ### [DataTables](https://datatables.net)
+  provides a comprehensive set of functionality for common client-side sorting,
+  filtering, pagination etc.
+
+  DataTables is fairly complex. It might be preferable to dynamically update
+  tables using server-generated HTML instead.
+
+  * tables
+  * search
+  * sortable
+  * filterable
+  * AJAX
+  * jQuery
