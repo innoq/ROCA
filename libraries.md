@@ -118,6 +118,17 @@ Further [suggestions](discussion.html) and
   * search
   * autocomplete
 
+* ### [Awesomplete](http://leaverou.github.io/awesomplete/)
+  is a lightweight autocompletion library
+
+  It does not currently support remote sources for asynchronous retrieval, so
+  it's mostly suitable for small and medium-sized data sets that can be
+  embedded directly within the page.
+
+  * input
+  * search
+  * autocomplete
+
 * ### <a href="http://jqueryui.com/datepicker/" id="jqui-datepicker">jQuery UI Datepicker</a>
   provides a UI for entering date and time values
 
@@ -151,6 +162,11 @@ Further [suggestions](discussion.html) and
   * sortable
   * dragndrop
 
+* ### [dragula](http://bevacqua.github.io/dragula/)
+  provides framework-agnostic drag and drop functionality
+
+  * dragndrop
+
 * ### [DropzoneJS](http://www.dropzonejs.com)
   augments regular file upload forms with a drag & drop UI and image previews
 
@@ -167,3 +183,8 @@ Further [suggestions](discussion.html) and
   * input
   * validation
   * jQuery
+
+* ### [wysihtml](http://wysihtml.com)
+  provides rich-text editing by augmenting a `textarea` element
+
+  * WYSIWYG
