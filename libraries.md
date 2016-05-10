@@ -23,7 +23,7 @@ Further [suggestions](discussion.html) and
 [contributions](https://github.com/innoq/ROCA) are welcome!
 
 * ### [Practical ARIA examples](http://heydonworks.com/practical_aria_examples/)
-  [Heydon Pickering]() lists several common components (e.g. tabs, dropdowns) with
+  [Heydon Pickering](http://heydonworks.com/) lists several common components (e.g. tabs, dropdowns) with
   example implementations following accessibility best practices.
 
 * ### <a href="https://github.com/defunkt/jquery-pjax" id="pjax">pjax</a>
