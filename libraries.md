@@ -46,6 +46,18 @@ Further [suggestions](discussion.html) and
   * AJAX
   * jQuery
 
+* ### [Unpoly](http://unpoly.com/)
+  shares concepts with [pjax](#pjax) and [smoothState](#smoothState), but
+  also allows to update page fragments or open a fragment in a modal layer.
+  AJAX responses can be preloaded and cached to reduce latency.
+
+  A design goal of Unpoly is to keep server-side changes to a minimum
+  and progressively enhance a series of full HTML pages instead.
+
+  * AJAX
+  * jQuery
+  * modal
+
 * ### <a href="http://jqueryui.com/tabs/" id="jqui-tabs">jQuery UI Tabs</a>
   provides a common UI for switching between content panels
 
