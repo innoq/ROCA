@@ -47,7 +47,7 @@ Further [suggestions](discussion.html) and
   * jQuery
 
 * ### [Unpoly](http://unpoly.com/)
-  shares concepts with [pjax](#pjax) and [smoothState](#smoothState), but
+  shares concepts with [pjax](#pjax) and [smoothState](#smoothstatehttpsmoothstatecom), but
   also allows to update page fragments or open a fragment in a modal layer.
   AJAX responses can be preloaded and cached to reduce latency.
 
