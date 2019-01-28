@@ -47,15 +47,13 @@ Further [suggestions](discussion.html) and
   * jQuery
 
 * ### [Unpoly](http://unpoly.com/)
-  shares concepts with [pjax](#pjax) and [smoothState](#smoothstatehttpsmoothstatecom), but
-  also allows to update page fragments or open a fragment in a modal layer.
-  AJAX responses can be preloaded and cached to reduce latency.
+  is an unobtrusive JavaScript framework for server-side web applications.
+  It enables fast and flexible frontends while keeping rendering logic on the server.
 
   A design goal of Unpoly is to keep server-side changes to a minimum
   and progressively enhance a series of full HTML pages instead.
 
   * AJAX
-  * jQuery
   * modal
 
 * ### <a href="http://jqueryui.com/tabs/" id="jqui-tabs">jQuery UI Tabs</a>
