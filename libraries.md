@@ -36,7 +36,7 @@ Further [suggestions](discussion.html) and
   * AJAX
   * jQuery
 
-* ### [smoothState](http://smoothstate.com/)
+* ### [smoothState](https://github.com/miguel-perez/smoothState.js)
   is similar to [pjax](#pjax), but uses animated page transition for a more
   seamless user experience
 
