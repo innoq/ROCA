@@ -22,6 +22,9 @@ difficult to fully capture a continuously evolving ecosystem.
 Further [suggestions](discussion.html) and
 [contributions](https://github.com/innoq/ROCA) are welcome!
 
+* ### [Hotwire](https://hotwire.dev/) HTML Over The Wire
+  an outstanding group of libraries. Mostly POSH with a little unobtrusive JavaScript for progressive enhancement. From the Basecamp team.
+
 * ### [Practical ARIA examples](http://heydonworks.com/practical_aria_examples/)
   [Heydon Pickering](http://heydonworks.com/) lists several common components (e.g. tabs, dropdowns) with
   example implementations following accessibility best practices.
