@@ -22,6 +22,9 @@ difficult to fully capture a continuously evolving ecosystem.
 Further [suggestions](discussion.html) and
 [contributions](https://github.com/innoq/ROCA) are welcome!
 
+* ### [htmx](https://htmx.org/) high power tools for HTML
+  htmx allows you to access AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext.
+
 * ### [Hotwire](https://hotwire.dev/) HTML Over The Wire
   an outstanding group of libraries. Mostly POSH with a little unobtrusive JavaScript for progressive enhancement. From the Basecamp team.
 
