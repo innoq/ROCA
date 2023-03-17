@@ -141,5 +141,5 @@ conceptual integrity.
 
 ### Can I provide feedback?
 
-Of course, please use <a href='./discussion.html'>the comments</a> to share your thoughts. We
+Of course, please use <a href='https://github.com/innoq/ROCA/issues'>the issue tracker for our Github repo</a> to share your thoughts. We
 welcome criticism as well as suggestions for improvement.
