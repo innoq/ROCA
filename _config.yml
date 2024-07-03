@@ -1,2 +1,8 @@
-safe:        true
-exclude:     ["vendor"]
+safe: true
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - addons/
+  - start_server.sh
